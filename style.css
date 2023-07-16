@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+
+}
+header{
+    background: rgba(255, 144, 14, 0.10);
+    margin: 10px 10px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-title{
+    font-size: 2rem;
+    color: #131313;
+}
+nav>ul{
+ display: flex;
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 10px 20px;
+    margin: 20px 0px 20px;
+    border: none;
+}
+nav li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+/*banner style*/
+.banner-contain{
+  max-width: 800px;
+  text-align: center;
+  margin:0 auto;
+}
+.banner-title{
+    font-size: 2rem;
+    color:#131313;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.banner-description{
+    color:#727272;
+    margin: 20px 0px 10px;
+}
+.logo{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/*main styles*/
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.teams-container{
+display: flex;
+align-items: center;
+margin-top: 40px;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.teams-contain{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.team-title{
+    font-size: 35px;
+}
+.team-title .Quick-list{
+    color:  #727272;
+    font-weight: 700;
+}
+.team-title  .of-Our{
+    color:  #131313;
+    font-weight: 700;
+} 
+.team-description{
+    margin: 30px 0px 10px;
+    color: #727272;
+}
+
+.team-title .Features{
+    color: #FF900E;
+    font-weight: 700;
+}
+@media screen and (max-width:576px) {
+    .header{
+        padding: 20px;
+    }
+    nav ,.teams-container{
+        flex-direction: column;
+    }
+    nav>ul{
+        flex-direction: column;
+    }
+    .banner-contain{
+        text-align: center;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .teams-img-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+ 
+}
+
+/*Tablate devices*/
+@media screen and (min-width:576px) and (max-width:991px) {
+    nav, .teams-container{
+        flex-direction: column;
+    }
+    nav>ul{
+        flex-direction: column;
+    }
+}
